@@ -90,13 +90,6 @@ def sign_up_by_django(request):
     info['form'] = form
     return render(request, 'registration_page.html', info)
 
-def collect_of_games(request):
-    Games = Game.objects.all()
-    context = {
-        'Games':Games,
-    }
-
-    return render(request, 'games.html', context)
 
 def main_page(request):
     return HttpResponse("Это главная страница")
