@@ -1,0 +1,27 @@
+{% extends "menu.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block pagename %}
+        <meta charset="UTF-8">
+        <title>Наша лавка</title>
+        <h1>Меню</h1>
+    {% endblock %}
+</head>
+<body>
+    {% block menu %}
+        {{ block.super }}
+    {% endblock %}
+
+    {% block content %}
+        <h2>Добро пожаловать в лавку крепежа!</h2>
+        <ul>
+           {% for item in fasteners %}
+                <li>{{ item }} <button>Выбор</button></li>
+            {% endfor %}
+        </ul>
+        <a href="/"><button>На главную</button></a>
+    {% endblock %}
+
+ </body>
+</html>

@@ -1,0 +1,28 @@
+{% extends "menu.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block pagename %}
+        <meta charset="UTF-8">
+        <title>Вы положили в корзину</title>
+        <h1>Корзина</h1>
+    {% endblock %}
+</head>
+<body>
+    {% block menu %}
+        {{ block.super }}
+    {% endblock %}
+
+    {% block content %}
+        <h2>Корзина</h2>
+        <ul>
+            <li>{{ cont }}</li>
+            <button>Продолжить</button>
+            <li>{{ done }}</li>
+            <button>Оформить</button>
+        </ul>
+        <a href="/"><button>На главную</button></a>
+    {% endblock %}
+
+</body>
+</html>
