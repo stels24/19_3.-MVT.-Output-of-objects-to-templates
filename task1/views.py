@@ -93,5 +93,3 @@ def sign_up_by_django(request):
 
 def main_page(request):
     return HttpResponse("Это главная страница")
-
-
