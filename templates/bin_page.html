@@ -9,12 +9,12 @@
     {% endblock %}
 </head>
 <body>
-    {% block bin_page %}
+    {% block menu %}
         {{ block.super }}
     {% endblock %}
 
     {% block content %}
-        <h2>Корзина</h2>
+        <h2>Ваша корзина</h2>
         <ul>
             <li>{{ cont }}</li>
             <button>Продолжить</button>
