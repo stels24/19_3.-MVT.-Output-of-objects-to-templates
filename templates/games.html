@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games list</title>
+</head>
+<body>
+    {% for game in Games %}
+        <div>
+            <h2>{{ game.title }} | {{ game.description }}</h2>
+            <p>Стоимость: {{ game.cost }}</p>
+            <button>Купить</button>
+        </div>
+    {% endfor %}
+</body>
+</html>
